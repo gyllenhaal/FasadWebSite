@@ -1,0 +1,25 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body>
+    <div>
+        @Html.ActionLink("Хто ми", "WeAre", "Home", new { }, new {@class = "title_link" })
+        @Html.ActionLink("Чому ми", "WhyWe", "Home", new { }, new {@class = "title_link" })
+        @Html.ActionLink("Галерея", "Galery", "Home", new { }, new {@class = "title_link" })
+        @Html.ActionLink("Контакти", "Contacts", "Home", new { }, new {@class = "title_link" })
+
+             
+
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,32 @@
+﻿@model IEnumerable<string>
+@foreach (var category in Model)
+{
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <link href="~/Content/MenuSubCat.css" rel="stylesheet" />
+        <title></title>
+    </head>    
+    <body>
+        <div>
+            <ul>
+                <li><a>
+                      @Html.RouteLink(category, new { controller = "Home", action = "Menu_Filter", link = category },
+   new { @class = category == ViewBag.SelectedCategory ? "selected" : null })
+                </a>
+                    <ul>
+                        @foreach (string item in ViewBag.Subcategories[category])
+                        {
+                            <li><a>                               
+                              @Html.RouteLink(item, new { controller = "Home", action = "Sub_Filter", link = item },
+   new { @class = item == ViewBag.SelectedCategory ? "selected" : null })
+                              
+                            </a></li>
+                        }
+
+                    </ul>
+                    
+                </li>
+            </ul>
+        </div>
+    </body>
+}

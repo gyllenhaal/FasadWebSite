@@ -1,0 +1,82 @@
+﻿@{
+    ViewBag.Title = "Alloy";
+}
+<h2 style="text-align:center">Алюмінієві конструкції</h2>
+<script type="text/javascript">
+
+    var slideIndex = 0;
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        
+        if (n > x.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = x.length };
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+           
+     
+        }
+        x[slideIndex - 1].style.display = "block";
+      
+     
+    }
+    window.onload = function carousel()
+   {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+      
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+           
+
+          
+        }
+        slideIndex++;
+        if (slideIndex > x.length) { slideIndex = 1 }
+        x[slideIndex - 1].style.display = "block";
+        setTimeout(carousel, 4000); 
+    }
+
+</script>
+
+<style>
+INPUT.actionButtons {
+width:100px;
+font: .8em Arial; color: White; margin: .5em;
+text-decoration: none; padding: .15em 1.5em .2em 1.5em;
+background-color: rgb(52, 73,94); border: 1px solid black;
+}
+.fig {
+        text-align:center;
+     
+    }
+ .mySlides {
+        display:block;
+        margin:0 auto;
+    }
+</style>
+
+<div  class="fig">
+   
+         <input class ="actionButtons" type="submit" onclick="plusDivs(-1)" value="Back"/>
+         <input class ="actionButtons" type="submit" onclick="plusDivs(+1)" value="Forward"/>
+ 
+</div >
+<figure>
+   
+     <img class="mySlides" src="~/img/Alloy/Alloy1.jpg" style ="display:none" width="60%" >
+</figure>
+<figure>
+     
+<img class="mySlides" src="~/img/Alloy/Alloy2.jpg"        style ="display:none" width="60%">
+    </figure>
+<figure>
+    
+<img class="mySlides" src="~/img/Alloy/Alloy3.jpg"    style ="display:none" width="60%">
+    </figure>
+<figure>
+   <img class="mySlides" src="~/img/Alloy/Alloy4.jpg"     style ="display:none" width="60%">
+        </figure>

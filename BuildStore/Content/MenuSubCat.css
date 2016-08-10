@@ -1,0 +1,46 @@
+﻿body{
+  background: white;
+}
+/*блок меню*/
+body ul{
+  margin: 0;
+  padding: 0;
+}
+body ul li {
+  background: white;
+  border: 1px solid #FFFFFF;
+  list-style: none;
+  width: 8em;         /*ширина блока меню*/ 
+}
+body ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 5px 5px 5px 15px;
+  color:white;
+}
+body ul li ul {
+  display: none;	   
+}
+ 
+body ul li ul a {
+  background-color: rgb(52, 73,94);
+}
+
+body ul li ul li {
+    border:2px solid white;
+}
+
+body ul li:hover {
+  position: relative; 
+  background-color: rgb(52, 73,94);
+}
+body ul li:hover > ul {
+
+  display: block;  
+}
+body ul li:hover ul{
+  position: absolute;
+  top: 0;    
+  left: 8em; 
+  
+}

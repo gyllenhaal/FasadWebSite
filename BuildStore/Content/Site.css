@@ -1,0 +1,66 @@
+﻿BODY {   
+      font-family: Cambria, Georgia, "Times New Roman";
+      margin: 0 auto;
+     }
+.title_link {
+  
+        text-decoration:none;
+        margin-left:.5em; background-color: rgb(52, 73,94); 
+        color:white;
+        border:1px, solid black;
+   
+}
+DIV#header  DIV.title, DIV.item H3, DIV.item H4, DIV.pager A 
+{ 
+  font: bold 1em "Arial Narrow", "Franklin Gothic Medium", Arial; color:white; 
+}  
+DIV#header
+ { 
+      background-color:rgb(52, 73,94); 
+      border-bottom: 2px solid #111;
+      color: White; 
+ }  
+DIV#header DIV.title 
+ { 
+      font-size: 2em;     padding: .6em; 
+ }  
+ 
+DIV#content 
+{
+       border-left: 2px solid gray;   margin-left: 9em;   padding: 1em;
+}  
+DIV#categories 
+{ 
+      float: left;   width: 8em;
+}  
+DIV.item 
+{
+       border-top: 1px dotted gray;   padding-top: .7em;   margin-bottom: .7em; 
+}  
+DIV.item:first-child
+ { 
+          border-top: none;     padding-top: 0;   
+ }  
+DIV.item H3 
+    {   
+        font-size: 1.3em;     margin: 0 0 .25em 0;  
+    }  
+DIV.item H4 
+    {
+      font-size: 1.1em;     margin: .4em 0 0 0;   
+    }  
+DIV#categories A {
+    font: "Arial Narrow", "Franklin Gothic Medium", Arial;display:block;color:black; font-size:15px;
+}
+DIV#categories A.selected {
+        background-color: rgb(52, 73,94); color:white;}
+DIV#categories A.hover {
+   background-color: rgb(52, 73,94);color:white;
+    }
+DIV#categories A.selected:hover
+ {
+    background-color: rgb(52, 73,94);color:white;
+    }
+H2 {
+    margin-top: 0.3em
+}
